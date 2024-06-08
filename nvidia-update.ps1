@@ -1,9 +1,9 @@
 <#PSScriptInfo
 .VERSION 1.15.3
 .GUID dd04650b-78dc-4761-89bf-b6eeee74094c
-.AUTHOR nullbio
-.LICENSEURI https://raw.githubusercontent.com/nullbio/nvidia-update/main/LICENSE
-.PROJECTURI https://github.com/nullbio/nvidia-update
+.AUTHOR ZenitH-AT
+.LICENSEURI https://raw.githubusercontent.com/ZenitH-AT/nvidia-update/main/LICENSE
+.PROJECTURI https://github.com/ZenitH-AT/nvidia-update
 .DESCRIPTION Checks for a new version of the NVIDIA driver, downloads and installs it. 
 #>
 param (
