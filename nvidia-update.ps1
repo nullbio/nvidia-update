@@ -1,9 +1,9 @@
 <#PSScriptInfo
 .VERSION 1.15.3
 .GUID dd04650b-78dc-4761-89bf-b6eeee74094c
-.AUTHOR ZenitH-AT
-.LICENSEURI https://raw.githubusercontent.com/ZenitH-AT/nvidia-update/main/LICENSE
-.PROJECTURI https://github.com/ZenitH-AT/nvidia-update
+.AUTHOR nullbio
+.LICENSEURI https://raw.githubusercontent.com/nullbio/nvidia-update/main/LICENSE
+.PROJECTURI https://github.com/nullbio/nvidia-update
 .DESCRIPTION Checks for a new version of the NVIDIA driver, downloads and installs it. 
 #>
 param (
@@ -19,8 +19,8 @@ param (
 	[switch] $Notebook = $false, # Override the desktop/notebook check and download the notebook driver
 	[string] $DownloadDirectory = "$($env:TEMP)\NVIDIA", # Override the directory where the script will download and extract the driver package
 	[switch] $KeepDownload = $false, # Don't delete the downloaded driver package after installation (or if an error occurred)
-	[string] $GpuDataFileUrl = "https://raw.githubusercontent.com/ZenitH-AT/nvidia-data/main/gpu-data.json", # Override the GPU data JSON file URL/path for determining product family (GPU) ID
-	[string] $OsDataFileUrl = "https://raw.githubusercontent.com/ZenitH-AT/nvidia-data/main/os-data.json", # Override the OS data JSON file URL/path for determining operating system ID
+	[string] $GpuDataFileUrl = "https://raw.githubusercontent.com/nullbio/nvidia-data/main/gpu-data.json", # Override the GPU data JSON file URL/path for determining product family (GPU) ID
+	[string] $OsDataFileUrl = "https://raw.githubusercontent.com/nullbio/nvidia-data/main/os-data.json", # Override the OS data JSON file URL/path for determining operating system ID
 	[string] $AjaxDriverServiceUrl = "https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/services/AjaxDriverService.php" # AjaxDriverService URL; e.g., replace ".com" with ".cn" to solve connectivity issues
 )
 
