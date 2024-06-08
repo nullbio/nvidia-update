@@ -41,7 +41,7 @@ if (-not (Test-Path $taskDir)) {
 }
 
 try {
-	$latestReleaseUrl = [System.Net.WebRequest]::Create("https://github.com/ZenitH-AT/nvidia-update/releases/latest").GetResponse().ResponseUri.OriginalString
+	$latestReleaseUrl = [System.Net.WebRequest]::Create("https://github.com/nullbio/nvidia-update/releases/latest").GetResponse().ResponseUri.OriginalString
 
 	Invoke-WebRequest -Uri "$($latestReleaseUrl.Replace("tag", "download"))/$($defaultScriptFileName)" -OutFile $taskPath
 	Invoke-WebRequest -Uri "$($latestReleaseUrl.Replace("tag", "download"))/$($defaultConfigFileName)" -OutFile "$($taskDir)\$($defaultConfigFileName)"
